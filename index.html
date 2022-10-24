@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 
-<body>
+<body">
     <main>
         <header><h1>Jayden's Coding Quiz</h1></header>
 
@@ -23,21 +23,24 @@
 
         <section class="quiz">
             <div class="quiz__timer"></div>
-            <div id="quiz__question"> what is?</div>
-            <div class="quiz__question__buttons">
-            <button>choice 1</button>
-            <button>choice 2</button>
-            <button>choice 3</button>
-            </div>
+            <div class="quiz__question"></div>
+                <div class="options-container">
+                    <button class="option" onclick="" id="op1">choice 1</button>
+                    <button class="option" id="op2">choice 2</button>
+                    <button class="option" id="op3">choice 3</button>
+                    <button class="option" id="op4">choice 4</button>
 
+                    <button class="submit">Submit</button>
+                    <button class="next">Next</button>
+            </div>
             <div class="quiz__answer"></div>
         </section>
 
 
         <section class="end-screen">
-            <div class="final-score">Your score: 100</div>
+            <div class="final-score"></div>
             <div class="high-score">
-                <input placeholder="Put your initials in here!">
+                <input class="initials" placeholder="Put your initials in here!">
                     <button class="high-score-button">Enter high score</button>
             </div>
         </section>

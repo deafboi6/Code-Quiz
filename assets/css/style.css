@@ -9,3 +9,9 @@
 .hide {
     display: none;
 }
+
+.quiz__question__buttons {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}
